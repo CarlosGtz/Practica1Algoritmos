@@ -12,12 +12,12 @@ def llenaArreglo(p):
 		p.append(random.randint(1, 5093833))
 	
 def Producto2Mayores(A,n):
-	if (A[1] > A[2]):
-		mayor1 = A[1]
-		mayor2 = A[2]
-	else:
-		mayor1 = A[2]
+	if (A[0] > A[1]):
+		mayor1 = A[0]
 		mayor2 = A[1]
+	else:
+		mayor1 = A[1]
+		mayor2 = A[0]
 	i = 3
 	while i <= n:
 		if (A[i] > mayor1):
