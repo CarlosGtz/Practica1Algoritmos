@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 from time import time
+tam = 100000
 def  MaximoComunDivisor(m ,n):
 	a = max(n,m)
 	b = min(n,m)
@@ -26,3 +27,4 @@ final_time = time()
 e_time = final_time - init_time
 print "MCD: "+str(res)
 print "Time: %.20f" % e_time
+writeFile(str_time)

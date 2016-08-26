@@ -5,11 +5,11 @@ import random
 
 
 array = []
-TAM = 1200
+TAM = 13000
 
 def llenaArreglo(p):
 	for i in range(TAM):
-		p.append(random.randint(1, 1000))
+		p.append(random.randint(1, 500000))
 
 def BurbujaMejorada(A,n):
 	for i in range(n):

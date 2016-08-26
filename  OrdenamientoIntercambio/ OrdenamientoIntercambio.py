@@ -4,11 +4,11 @@ from time import time
 import random
 
 array = []
-TAM = 10
+TAM = 25500
 
 def llenaArreglo(p):
 	for i in range(TAM):
-		p.append(random.randint(1, 50))
+		p.append(random.randint(1, 5000000))
 
 def OrdenamientoInterCambio(a,n):
 	for i in range(n):
@@ -37,6 +37,5 @@ OrdenamientoInterCambio(array,TAM)
 final_time = time()
 e_time = final_time - init_time
 str_time = str("%.20f" % e_time)
-print array
 print str_time
 writeFile(str_time)

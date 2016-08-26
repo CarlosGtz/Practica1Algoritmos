@@ -4,12 +4,12 @@ from time import time
 import random
 
 array = []
-tam = 10200
+tam = 100000
 
 
 def llenaArreglo(p):
 	for i in range(tam):
-		p.append(random.randint(1, 5093833))
+		p.append(random.randint(1, 5000000))
 	
 def Producto2Mayores(A,n):
 	if (A[0] > A[1]):
@@ -43,7 +43,7 @@ Producto2Mayores(array,tam-1)
 final_time = time()
 e_time = final_time - init_time
 str_time = str("%.20f" % e_time)
-print e_time
+print str_time
 writeFile(str_time)
 
 

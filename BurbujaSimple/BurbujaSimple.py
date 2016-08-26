@@ -5,11 +5,11 @@ import random
 
 
 array = []
-TAM = 500
+TAM = 11000
 
 def llenaArreglo(p):
 	for i in range(TAM):
-		p.append(random.randint(1, 1000))
+		p.append(random.randint(1, 5000000))
 
 def BurbujaSimple(A,n):
 	for i in range(n):
@@ -32,7 +32,7 @@ init_time = time()
 BurbujaSimple(array,len(array))
 final_time = time()
 e_time = final_time - init_time
-str_time = str("%.20f" % e_time)
+str_time = str("%.15f" % e_time)
 writeFile(str_time)
-print "Time: %.20f" % e_time
+print str_time
 
