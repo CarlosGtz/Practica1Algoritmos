@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from time import time
-tam = 100000
+tam = 50000
 def  MaximoComunDivisor(m ,n):
 	a = max(n,m)
 	b = min(n,m)
@@ -22,9 +22,10 @@ def writeFile(fTime):
 	archivo.close()
 
 init_time = time()
-res = MaximoComunDivisor(7000000000000000000,70000000000000)
+res = MaximoComunDivisor(129970,tam)
 final_time = time()
 e_time = final_time - init_time
 print "MCD: "+str(res)
-print "Time: %.20f" % e_time
+str_time = str("%.15f" % e_time)
+print str_time
 writeFile(str_time)
